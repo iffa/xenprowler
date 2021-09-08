@@ -1,0 +1,16 @@
+{
+  "bindings": [
+    {
+      "schedule": "0 */15 * * * *",
+      "name": "timer",
+      "type": "timerTrigger",
+      "direction": "in"
+    },
+    {
+      "name": "starter",
+      "type": "orchestrationClient",
+      "direction": "in"
+    }
+  ],
+  "scriptFile": "../dist/ScoutOrchestrationTrigger/index.js"
+}

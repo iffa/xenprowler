@@ -1,0 +1,31 @@
+{
+  "version": "2.0",
+  "logging": {
+    "fileLoggingMode": "never",
+    "logLevel": {
+      "default": "Error",
+      "Host.Results": "Error",
+      "Function": "Error",
+      "Host.Aggregator": "Error"
+    },
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "maxTelemetryItemsPerSecond": 5,
+        "excludedTypes": "Request;Exception"
+      }
+    }
+  },
+  "extensionBundle": {
+    "id": "Microsoft.Azure.Functions.ExtensionBundle",
+    "version": "[2.*, 3.0.0)"
+  },
+  "extensions": {
+    "durableTask": {
+      "storageProvider": {
+        "maxQueuePollingInterval": "00:15:00",
+        "partitionCount": 1
+      }
+    }
+  }
+}

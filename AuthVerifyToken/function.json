@@ -1,0 +1,46 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": ["get"]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "authenticationToken",
+      "databaseName": "xenprowler",
+      "collectionName": "auth_tokens",
+      "connectionStringSetting": "CosmosDbConnectionString",
+      "direction": "in",
+      "Id": "{Query.email}",
+      "PartitionKey": "{Query.email}"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "userDocument",
+      "databaseName": "xenprowler",
+      "collectionName": "users",
+      "connectionStringSetting": "CosmosDbConnectionString",
+      "direction": "in",
+      "Id": "{Query.email}",
+      "PartitionKey": "{Query.email}"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "updatedUserDocument",
+      "databaseName": "xenprowler",
+      "collectionName": "users",
+      "createIfNotExists": "false",
+      "connectionStringSetting": "CosmosDbConnectionString"
+    }
+  ],
+  "scriptFile": "../dist/AuthVerifyToken/index.js"
+}

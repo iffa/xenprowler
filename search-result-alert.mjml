@@ -1,0 +1,43 @@
+<mjml>
+  <mj-body background-color="#ffffff">
+    <mj-section padding="15px">
+      <mj-column
+        padding-top="25px"
+        padding-bottom="25px"
+        border="1px solid #dededd"
+        border-top="8px solid #1AA0E1"
+        vertical-align="top"
+        width="100%"
+      >
+        <mj-text
+          align="center"
+          color="#404040"
+          font-size="32px"
+          font-weight="bold"
+          font-family="Open Sans, Helvetica, Arial, sans-serif"
+        >
+          Search result alert
+        </mj-text>
+        <mj-text
+          align="center"
+          color="#404040"
+          line-height="1.4"
+          font-size="16px"
+          font-family="Open Sans, Helvetica, Arial, sans-serif"
+        >
+          We've found new search results for your search queries:
+        </mj-text>
+        <mj-text
+          align="center"
+          color="#404040"
+          line-height="1.4"
+          font-size="14px"
+          font-family="Open Sans, Helvetica, Arial, sans-serif"
+        >
+          <a href="[[RESULT_LINK]]">[[TITLE]]</a>, [[CONFIDENCE]] confidence for
+          query [[QUERY]]
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

@@ -1,0 +1,15 @@
+{
+  "bindings": [
+    {
+      "type": "cosmosDBTrigger",
+      "name": "documents",
+      "direction": "in",
+      "leaseCollectionName": "results_trigger_leases",
+      "connectionStringSetting": "CosmosDbConnectionString",
+      "databaseName": "xenprowler",
+      "collectionName": "results",
+      "createLeaseCollectionIfNotExists": true
+    }
+  ],
+  "scriptFile": "../dist/ScoutSendResultAlertTask/index.js"
+}

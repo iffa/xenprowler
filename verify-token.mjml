@@ -1,0 +1,58 @@
+<mjml>
+  <mj-body background-color="#ffffff">
+    <mj-section padding="15px">
+      <mj-column
+        padding-top="25px"
+        padding-bottom="25px"
+        border="1px solid #dededd"
+        border-top="8px solid #1AA0E1"
+        vertical-align="top"
+        width="100%"
+      >
+        <mj-text
+          align="center"
+          color="#404040"
+          font-size="32px"
+          font-weight="bold"
+          font-family="Open Sans, Helvetica, Arial, sans-serif"
+        >
+          Xenprowler
+        </mj-text>
+        <mj-text
+          align="center"
+          color="#404040"
+          line-height="1.4"
+          font-size="16px"
+          font-family="Open Sans, Helvetica, Arial, sans-serif"
+        >
+          Hello! You can sign in to Xenprowler by clicking the button below.
+          Have fun!
+        </mj-text>
+        <mj-button
+          title="Click to login"
+          align="center"
+          font-size="18px"
+          font-weight="bold"
+          line-height="1.4"
+          border-radius="10px"
+          background-color="#1AA0E1"
+          font-family="Open Sans, Helvetica, Arial, sans-serif"
+          href="[[LOGIN_LINK]]"
+        >
+          Login
+        </mj-button>
+        <mj-text
+          align="center"
+          color="#404040"
+          line-height="1.4"
+          font-size="13px"
+          font-family="Open Sans, Helvetica, Arial, sans-serif"
+        >
+          If you cannot use the button to login, click this link:
+          <br />
+          <a href="[[LOGIN_LINK]]">[[LOGIN_LINK]]</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

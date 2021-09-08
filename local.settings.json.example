@@ -1,0 +1,19 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "NODE_ENV": "local",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "CosmosDbConnectionString": "AccountEndpoint=https://localhost:8081/;AccountKey=foobar",
+    "AuthenticationTokenSecret": "secret",
+    "SessionTokenSecret": "secret",
+    "SessionCookieName": "xenprowler_session",
+    "SessionCookieMaxAge": 2678400,
+    "SessionCookieDomain": "localhost",
+    "VerifyAuthenticationTokenEndpoint": "http://localhost:3000/auth/login/callback",
+    "SendGridApiKey": "barbar",
+    "SendGridFromAddress": "Xenprowler <noreply@example.com>",
+    "BbsBaseUrl": "https://bbs.example.com",
+    "BbsMarketListingsUrl": "https://bbs.example.com"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "input",
+      "type": "activityTrigger",
+      "direction": "in"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "resultDocument",
+      "databaseName": "xenprowler",
+      "collectionName": "results",
+      "createIfNotExists": "false",
+      "connectionStringSetting": "CosmosDbConnectionString"
+    }
+  ],
+  "scriptFile": "../dist/ScoutSaveResultTask/index.js"
+}
